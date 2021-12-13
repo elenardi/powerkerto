@@ -41,20 +41,23 @@
             <div class="modal-body">
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <label for="username" class="form-label">Username</label>
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
-                    <label for="basic-url">Your vanity URL</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                            <span class="input-group-text" id="basic-addon3"><i class="fas fa-user icn-user"></i></span>
                         </div>
                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control primary" id="exampleInputPassword1">
-                    <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"><i class="fas fa-unlock-alt"></i></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -70,7 +73,9 @@
     </div>
     <!-- halo0 -->
 
-
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4096ccc916.js" crossorigin="anonymous"></script>
+    <!-- End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
