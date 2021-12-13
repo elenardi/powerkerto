@@ -21,7 +21,7 @@ class UserController extends Controller
             if (($request->password == $validator->password))
             {
                 session(['username' => $request->username]);
-                //return redirect('/adminlte/index');
+                return redirect('dashboard');
             }
             else {
                 //return back()->withInput()->with('pesan',"Login Gagal");
