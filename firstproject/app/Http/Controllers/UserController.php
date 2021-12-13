@@ -36,17 +36,17 @@ class UserController extends Controller
     public function login(Request $request)
     {
         //validation rules
-        $rules = array(
+        $rules = $request->validate([
             'username' => 'required',
-            'password' => 'required|min:8'
-        );
+            'password' => 'required|min:8',
+            ]);
 
         $validator = User::where('username', '=', $rules['username'])->first();
         if($validator){
             if (($request->password == $validator->password))
             {
                 session(['username' => $request->username]);
-                return redirect('user.dashboard');
+                return redirect('dashboard');
             }
             else {
                 //return back()->withInput()->with('pesan',"Login Gagal");

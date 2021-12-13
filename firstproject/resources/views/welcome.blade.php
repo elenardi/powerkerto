@@ -39,7 +39,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="{{ route('user.login') }}" method="post">
+            <form  method="POST" action="{{ route('login') }}">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -47,7 +47,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3"><i class="fas fa-user icn-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" id="basic-url" name="username" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="username" name="username" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3">
@@ -56,17 +56,17 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3"><i class="fas fa-unlock-alt"></i></i></span>
                         </div>
-                        <input type="text" class="form-control" id="basic-url" name="password" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="password" name="password" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
             </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Login</button>
             </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
     <!-- End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 

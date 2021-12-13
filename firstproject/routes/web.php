@@ -19,6 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', [UserController::class, 'login'])->name('user.login');
+Route::post('/', [UserController::class, 'login'])->name('login');
 
-Route::get('/dashboard',[TestController::class, 'index'])->name('user.dashboard');
+Route::get('/dashboard',[TestController::class, 'index'])->name('dashboard');
