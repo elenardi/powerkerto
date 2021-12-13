@@ -46,3 +46,27 @@ body {
 .fa-unlock-alt {
     padding-top: 6px !important;
 }
+
+.modal {
+}
+.modal + label {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadein 0.5s;
+}
+.modal:checked + label {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

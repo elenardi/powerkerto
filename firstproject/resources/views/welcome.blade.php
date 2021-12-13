@@ -31,7 +31,7 @@
         <img src="img/vectary.png" alt="">
     </div>
 
-    <div class="modal" tabindex="-1" id="login">
+    <div class="modal fade" tabindex="-1" id="login">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
@@ -76,6 +76,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4096ccc916.js" crossorigin="anonymous"></script>
     <!-- End -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
