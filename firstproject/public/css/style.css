@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.lp {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(
+        243.28deg,
+        #1bb3e3 11.82%,
+        rgba(196, 196, 196, 0) 91.8%
+    );
+    overflow: hidden;
+}
+
+.lp .leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+.lp .leftside h1 {
+    font-weight: 700;
+}
+
+.lp .leftside p {
+    font-weight: 500;
+}
+
+.lp .leftside .costume {
+    width: 200px !important;
+}
