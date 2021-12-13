@@ -40,6 +40,7 @@
             </div>
             <div class="modal-body">
             <form  method="POST" action="{{ route('login') }}">
+                {{ csrf_field() }}
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->

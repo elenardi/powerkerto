@@ -46,14 +46,14 @@ class UserController extends Controller
             if (($request->password == $validator->password))
             {
                 session(['username' => $request->username]);
-                return redirect('dashboard');
+                return redirect('/dashboard');
             }
             else {
-                //return back()->withInput()->with('pesan',"Login Gagal");
+                return back();
             }
         }
         else{
-            //return back()->withInput()->with('pesan',"Login Gagal");
+            return back();
         }
     }
 
