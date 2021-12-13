@@ -22,6 +22,6 @@ Route::get('/', function () {
 
 Route::post('/', [UserController::class, 'login'])->name('login')->middleware('guest');
 
-Route::get('/dashboard',[UserController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard',[UserController::class, 'index'])->name('dashboard')->middleware('check');
 
 Route::get('/dbadmin',[dbadminController::class, 'dbadmin'])->name('dbadmin');

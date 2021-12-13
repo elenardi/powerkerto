@@ -22,7 +22,7 @@ class CheckLoginMiddleware
         }
         else
         {
-            return redirect ('dashboard');
+            return redirect ('/');
         }
     }
 }
