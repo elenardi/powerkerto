@@ -24,24 +24,46 @@
             <p>Selamat datang di pwkbackoffice.com</p>
             <h1>KREATIF INOVATIF SOLUTIF</h1>
             <p>Silahkan login untuk melanjutkan</p>
-            <a href="#" class="btn btn-primary costume">Login</a>
+            <button type="button" class="btn btn-primary costume" data-bs-toggle="modal" data-bs-target="#login">
+                Login
+            </button>
         </div>
         <img src="img/vectary.png" alt="">
     </div>
 
-    <div class="modal" tabindex="-1">
+    <div class="modal" tabindex="-1" id="login">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
+                <h5 class="modal-title">Login</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Modal body text goes here.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                    <label for="basic-url">Your vanity URL</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control primary" id="exampleInputPassword1">
+                    <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+            </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary">Login</button>
             </div>
             </div>
         </div>
