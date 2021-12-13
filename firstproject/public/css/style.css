@@ -37,3 +37,12 @@ body {
 .lp .leftside .costume {
     width: 200px !important;
 }
+
+.fas {
+    height: 25px;
+}
+
+.fa-user,
+.fa-unlock-alt {
+    padding-top: 6px !important;
+}
