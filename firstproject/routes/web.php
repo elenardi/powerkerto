@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/user/login', 'UserController@login')->name('user.login');
+Route::post('/', [UserController::class, 'login'])->name('user.login');
+
+Route::get('/dashboard',[TestController::class, 'index'])->name('user.dashboard');

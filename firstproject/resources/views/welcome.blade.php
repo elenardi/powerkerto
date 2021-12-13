@@ -39,7 +39,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form>
+            <form action="{{ route('user.login') }}" method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -47,7 +47,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3"><i class="fas fa-user icn-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="basic-url" name="username" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3">
@@ -56,7 +56,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3"><i class="fas fa-unlock-alt"></i></i></span>
                         </div>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="basic-url" name="password" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3 form-check">
@@ -66,7 +66,7 @@
             </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </div>
             </div>
         </div>
