@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -43,7 +44,7 @@ class UserController extends Controller
 
         $validator = User::where('username', '=', $rules['username'])->first();
         if($validator){
-            if (($request->password == $validator->password))
+            if (Hash::check($rules['password'], $validator->password))
             {
                 session(['username' => $request->username]);
                 return redirect('/dashboard');
