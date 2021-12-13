@@ -57,7 +57,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3"><i class="fas fa-unlock-alt"></i></i></span>
                         </div>
-                        <input type="text" class="form-control" id="password" name="password" aria-describedby="basic-addon3">
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="mb-3 form-check">
