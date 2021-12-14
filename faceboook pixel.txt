@@ -1,0 +1,11 @@
+https://developers.facebook.com/docs/facebook-pixel/guides/track-multiple-events
+
+https://connect.facebook.net/en_US/sdk.js
+
+https://browser-update.org/update.min.js
+
+https://connect.facebook.net/en_US/fbevents.js
+
+
+Getting Started Facebook Pixel
+https://developers.facebook.com/docs/facebook-pixel/get-started
