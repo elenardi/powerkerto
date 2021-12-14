@@ -4,7 +4,7 @@
 	<!--begin::Page-->
 	<div class="page d-flex flex-row flex-column-fluid">
 
-		@include('layout/aside/_base')
+		
 
 		<!--begin::Wrapper-->
 		<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
@@ -35,7 +35,7 @@
 @include('layout/topbar/partials/_activity-drawer')
 
 
-@include('layout/explore/_main')
+
 
 
 <!--begin::Chat drawer-->
