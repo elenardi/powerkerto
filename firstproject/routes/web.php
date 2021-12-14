@@ -22,7 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', [LoginController::class, 'login'])->name('login');
+Route::post('/', [LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/dbadmin',[dbadminController::class, 'index'])->name('dbadmin')->middleware('check');
