@@ -45,7 +45,7 @@ License: For each use you must have a valid license purchased only from above li
 <!--begin::Body-->
 
 <body id="kt_body"
-	class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed">
+	class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed">
 
 	@include('layout/master')
 
