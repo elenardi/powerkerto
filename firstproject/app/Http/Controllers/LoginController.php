@@ -21,7 +21,18 @@ class LoginController extends Controller
             if (Hash::check($rules['password'], $validator->password))
             {
                 session(['username' => $request->username]);
-                return redirect('/dbadmin');
+                if ($validator->role == 'admin')
+                {
+                    return redirect('/dbadmin');
+                }
+                elseif($validator->role == 'adv')
+                {
+                    return redirect('/dbadv');
+                }
+                else
+                {
+                    return redirect('/dbcs');
+                }
             }
             else {
                 return back();
