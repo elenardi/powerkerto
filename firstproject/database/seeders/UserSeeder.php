@@ -17,12 +17,29 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->delete();
-        User::create(array(
-            'name'     => 'Administrator',
-            'username' => 'admin',
-            'role'     => 'admin',
-            'email'    => 'admin@admin.com',
-            'password' => Hash::make('12345678'),
-        ));
+        $user = [
+            [
+                'name'     => 'Administrator',
+                'username' => 'admin',
+                'role'     => 'admin',
+                'email'    => 'admin@admin.com',
+                'password' => Hash::make('12345678'),
+            ],
+            [
+                'name'     => 'Advertise',
+                'username' => 'adv',
+                'role'     => 'adv',
+                'email'    => 'adv@adv.com',
+                'password' => Hash::make('12345678'),
+            ],
+            [
+                'name'     => 'Customer Service',
+                'username' => 'cs',
+                'role'     => 'cs',
+                'email'    => 'cs@cs.com',
+                'password' => Hash::make('12345678'),
+            ]
+            ];
+        User::insert($user);
     }
 }
