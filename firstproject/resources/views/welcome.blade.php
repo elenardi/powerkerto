@@ -14,22 +14,21 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Viga&display=swap" rel="stylesheet">
 
     <title>Back Office Powerkerto</title>
   </head>
   <body>
     <div class="lp">
-        <div class="leftside">
-            <p>Selamat datang di pwkbackoffice.com</p>
-            <h1>KREATIF INOVATIF SOLUTIF</h1>
-            <p>Silahkan login untuk melanjutkan</p>
-            <button type="button" class="btn btn-primary costume" data-bs-toggle="modal" data-bs-target="#login">
+        <div class="contents">
+            <h1><span>POWER</span>KERTO</h1>
+            <h2>KREATIF INOVATIF SOLUTIF</h2>
+            <button type="button" class="btn btn-primary tombol" data-bs-toggle="modal" data-bs-target="#login">
                 Login
             </button>
         </div>
-        <img src="img/vectary.png" alt="">
     </div>
+    <footer><p>Powered by powerkerto</p></footer>
 
     <div class="modal fade" tabindex="-1" id="login">
         <div class="modal-dialog">
@@ -72,6 +71,8 @@
             </div>
         </div>
     </div>
+
+    
     <!-- halo0 -->
 
     <!-- Font Awesome -->
