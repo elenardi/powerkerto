@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class dbadminController extends Controller
 {
-    public function dbadmin() {
+    public function index() {
         return view ('dbadmin');
     }
 }

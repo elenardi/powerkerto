@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\dbadminController;
+use GuzzleHttp\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', [UserController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/', [LoginController::class, 'login'])->name('login');
 
-Route::get('/dashboard',[UserController::class, 'index'])->name('dashboard')->middleware('auth');
-
-Route::get('/dbadmin',[dbadminController::class, 'dbadmin'])->name('dbadmin');
+Route::get('/dbadmin',[dbadminController::class, 'index'])->name('dbadmin')->middleware('check');

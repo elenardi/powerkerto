@@ -34,28 +34,9 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request)
+    public function store(Request $request)
     {
-        //validation rules
-        $rules = $request->validate([
-            'username' => 'required',
-            'password' => 'required|min:8',
-            ]);
 
-        $validator = User::where('username', '=', $rules['username'])->first();
-        if($validator){
-            if (Hash::check($rules['password'], $validator->password))
-            {
-                session(['username' => $request->username]);
-                return redirect('/dashboard');
-            }
-            else {
-                return back();
-            }
-        }
-        else{
-            return back();
-        }
     }
 
     /**
