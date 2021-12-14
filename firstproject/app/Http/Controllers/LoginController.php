@@ -31,4 +31,10 @@ class LoginController extends Controller
             return back();
         }
     }
+
+    public function logout()
+    {
+        session()->forget('username');
+        return redirect('/');
+    }
 }

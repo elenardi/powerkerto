@@ -21,5 +21,6 @@ Route::get('/', function () {
 });
 
 Route::post('/', [LoginController::class, 'login'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/dbadmin',[dbadminController::class, 'index'])->name('dbadmin')->middleware('check');
